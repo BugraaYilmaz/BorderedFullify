@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 300px;
+  height: 300px;
+}
+header{
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  background-color: black;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.buttonArea{
+  position: relative;
+  background-color: antiquewhite;
+  height: 200px;
+
+}
+.buttonText{
+  text-align: center;
+  height: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+.buttonImg{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  top: 10%;
+}

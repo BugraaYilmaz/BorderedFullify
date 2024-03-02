@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "BorderedFullify",
+  "version": "1.0.0",
+  "description": "A basic extension that adds a bordered fullscreen feature on youtube media player.",
+  "content_scripts": [
+    {
+      "matches":["https://www.youtube.com/","https://www.youtube.com/watch?v*","https://www.youtube.com/embed/*"],
+      "js":["app.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon":{
+      "16": "assets/images/Gemini_Generated_Image.png"
+    },
+    "default_popup": "PopUp.html",
+    "default_title": "BorderedFullify"
+  }
+}
