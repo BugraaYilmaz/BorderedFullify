@@ -5,7 +5,7 @@
   "description": "A basic extension that adds a bordered fullscreen feature on youtube media player.",
   "content_scripts": [
     {
-      "matches":["https://www.youtube.com/","https://www.youtube.com/watch?v*","https://www.youtube.com/embed/*"],
+      "matches":["https://www.youtube.com/*","https://www.youtube.com/watch?v*","https://www.youtube.com/embed/*"],
       "js":["app.js"],
       "run_at": "document_end"
     }

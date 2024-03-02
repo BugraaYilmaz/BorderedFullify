@@ -45,12 +45,19 @@ class InputListener{
       }
     })
   }
-  
-
 }
 
-listenInputs= new InputListener;
+const listenInputs= new InputListener;
 listenInputs.listenKeys();
 
 
+
+
+
+const rightPlayerButtons = document.querySelector(".ytp-right-controls");
+const maximizeButton= document.createElement("img");
+maximizeButton.setAttribute("src","assets/images/maximize.png");
+maximizeButton.setAttribute("style","width:48px; height:48px;");
+rightPlayerButtons.append(maximizeButton);
+console.log(rightPlayerButtons);  
 
