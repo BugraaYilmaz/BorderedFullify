@@ -41,6 +41,15 @@ class VideoUrl {
       console.log('Url Error');
     }
   }
+  checkSearchBarActive(){
+    const searchBar=document.querySelector("div ytd-masthead #center ytd-searchbox #search");
+    if(searchBar!= null && document.activeElement==searchBar){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }
 
 class InputListener {
@@ -53,8 +62,10 @@ class InputListener {
       switch (eventName.key) {
         case 'b':
         case 'B':
-          this.urlHandler.setPageUrl();
-          this.urlHandler.insertInUrl();
+          if(!(this.urlHandler.checkSearchBarActive())){
+            this.urlHandler.setPageUrl();
+            this.urlHandler.insertInUrl();
+          }
           break;
       }
     });
